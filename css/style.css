@@ -90,6 +90,16 @@ section {
   padding: 3rem 0;
 }
 
+.flexbox {
+  display: flex;
+  Justify-content: center;
+
+}
+
+.flexbox-item {
+  flex: 1;
+}
+
 @media (min-width:650) {
   header,
   section {
@@ -102,6 +112,7 @@ section {
   margin-inline:auto;
   width: (--main-width);
   display: flex;
+  Justify-content: center;
 }
 
 .container--narrow{
@@ -154,15 +165,16 @@ a:hover {
   border: 4px solid #4594e3;
   border-radius: 10%;
   display: block;
+  flex-direction: flex;
   max-width: 100%;
 }
 
-split{
+.split{
   display:flex;
   flex-direction:column;
 }
 
-@media (min-width: 480){
+@media (min-width: 440){
   .split{
     flex-direction: row;
   }
@@ -195,16 +207,16 @@ input{
 
 }
 
-text-area {
+.text-area {
   text-align: left;
   font-family: "Open Sans", Verdana, sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   color: #ffffff;
 
 }
 
 
-action {
+.action {
     text-align: left;
     font-family: "Open Sans", Verdana, sans-serif;
     font-size: 12px;
@@ -257,10 +269,11 @@ footer::before, footer::after {
 }
   
   
-  @media only screen and (min-width: 480px){
+  @media only screen and (min-width: 440px){
     .card {
       max-width: 33%;
       padding: 3px;
+      flex-direction: row;
       box-sizing: border-box;
     }
 
