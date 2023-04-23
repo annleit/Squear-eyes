@@ -1,134 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link href="css/style.css" rel="stylesheet">-->
-    <meta name="Description" content="Shopping cart page">
-    <title>cart</title>
-</head>
-<body>
-    <header>
-        <!--logo inn here-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- font import from Google-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <!-- font import from Google-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <meta name="Description" content="Shopping cart for Square Eyes">
+        <title>Square Eyes|Cart</title>
+    </head>
+<body class="body">
+    <!--nav and logo inn here-->
+    <header class="header">
+        <img src="images/SquareEyes-NEWweb-white-small.png" alt="Square Eyes Logo" class="logo"></a>
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu" />
         <nav>
-            <img src="images/SquareEyes-NEWweb-white.png" alt="Logo" class="logo" width="150" height="80" />
-                <a href="index.html" class="menu">Home</a>
-                <a href="about.html" class="menu">About</a>
-                <a href="movies.html" class="menu">Films</a>
-                <a href="contact.html" class="menu">Contact</a>
-                <a href="cart.html" class="menu">Cart</a>
+            <ul class="nav ul">
+                <li><a href="index.html"class="nav li">Home</a></li>
+                <li><a href="about.html" class="nav li">About</a></li>
+                <li><a href="movies.html" class="nav li">Films</a></li>
+                <li><a href="contact.html" class="nav li">Contact</a></li>
+                <li><a href="cart.html" class="nav li"><i class="fa fa-shopping-cart" class="cart-icon"></i></a>  </li>
+            </ul>
         </nav>
-    
-    <div>
-    <H2>Shopping cart</H2> 
-    </div>
-</header>
+      </header>
+    <main>       
     <!--main content in here-->
-    <div>
+      <div>
+      <!-- Products that are chosen goes here -->
+      <section>
+        <p><button class="cta-film-info"><a href="movies.html">Keep shopping</a></button></p>
+        <p><h1>Checkout</h1></p>
         <p>
-            <img src="images/Top-Gun-cinematerial.jpg" width="242" height="auto" alt="Filmposter from Top Gun - Maverick"><br>
+            <img src="images/Top-Gun-cinematerial.jpg" alt="Filmposter from Top Gun - Maverick"><br>
             <a href="feature.html" class="film-title">Top Gun</a>
         </p>
         <p>
-            <img src="images/Avatar_cinematerial.jpg" width="242" height="auto" alt="Filmposter from Avatar"><br>
+            <img src="images/Avatar_cinematerial.jpg" alt="Filmposter from Avatar"><br>
             <a href="movies.html" class="film-title">Avatar</a>
         </p>
         <p>
-            <img src="images/Matrix-cinmaterial.jpg" width="242" height="auto" alt="Filmposter from House of The Matrix"><br>
+            <img src="images/Matrix-cinmaterial.jpg" alt="Filmposter from House of The Matrix"><br>
             <a href="feature.html" class="film-title">The Matrix<br></a>
         </p>
         </div>
-        <div class="row">
-            <div class="col-75">
-              <div class="container">
-                <form action="/action_page.php">
-          
-                  <div class="row">
-                    <div class="col-50">
-                      <h3>Billing Address</h3>
-                      <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                      <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-                      <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                      <input type="text" id="email" name="email" placeholder="john@example.com">
-                      <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                      <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-                      <label for="city"><i class="fa fa-institution"></i> City</label>
-                      <input type="text" id="city" name="city" placeholder="New York">
-          
-                      <div class="row">
-                        <div class="col-50">
+      </section>
+      <section>
+        <!-- shopping cart info -->
+        <div>
+          <div class="input">
+            <h2>Cart info</h2>
+            <p class="price"><a href="#">Top Gun</a> $10.95</p>
+            <p class="price"><a href="#">Avatar</a> $11.95</p>
+            <p class="price"><a href="#">The Matrix</a> $7.95</p>
+            <hr>
+            <p class="price">Total <b>$30.85</b></p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- Customer info & payment info -->
+        <div>
+          <div class="input">
+                <form class="form">
+                  <div class="colums">
+                    <div>
+                      <h2>Payment info</h2>
+                      <label for="fname">Full Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Name">
+                      <label for="email">Email</label>
+                      <input type="text" id="email" name="email" placeholder="name@example.com">
+                      <label for="adr">Address</label>
+                      <input type="text" id="adr" name="address" placeholder="Address">
+                      <label for="city">City</label>
+                      <input type="text" id="city" name="city" placeholder="City">
+                      <div class="colums">
+                        <div>
                           <label for="state">State</label>
-                          <input type="text" id="state" name="state" placeholder="NY">
+                          <input type="text" id="state" name="state" placeholder="State">
                         </div>
-                        <div class="col-50">
+                        <div>
                           <label for="zip">Zip</label>
-                          <input type="text" id="zip" name="zip" placeholder="10001">
+                          <input type="text" id="zip" name="zip" placeholder="Zipcode">
                         </div>
                       </div>
                     </div>
-          
-                    <div class="col-50">
-                      <h3>Payment</h3>
-                      <label for="fname">Accepted Cards</label>
-                      <div class="icon-container">
-                        <i class="fa fa-cc-visa" style="color:navy;"></i>
-                        <i class="fa fa-cc-amex" style="color:blue;"></i>
-                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                        <i class="fa fa-cc-discover" style="color:orange;"></i>
-                      </div>
-                      <label for="cname">Name on Card</label>
-                      <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-                      <label for="ccnum">Credit card number</label>
-                      <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                      <label for="expmonth">Exp Month</label>
-                      <input type="text" id="expmonth" name="expmonth" placeholder="September">
-          
-                      <div class="row">
-                        <div class="col-50">
-                          <label for="expyear">Exp Year</label>
-                          <input type="text" id="expyear" name="expyear" placeholder="2018">
-                        </div>
-                        <div class="col-50">
-                          <label for="cvv">CVV</label>
-                          <input type="text" id="cvv" name="cvv" placeholder="352">
-                        </div>
-                      </div>
-                    </div>
-          
                   </div>
-                  <label>
-                    <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-                  </label>
-                  <input type="submit" value="Continue to checkout" class="btn">
+                </form>
+                <form class="form">
+                  <div class="colums">
+                    <div>
+                      <h2>Card info</h2>
+                      <label for="cname">Name on Card</label>
+                      <input type="text" id="cname" name="cardname" placeholder="Name">
+                      <label for="ccnum">Credit card number</label>
+                      <input type="text" id="ccnum" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx">
+                      <label for="expmonth">Exp Month</label>
+                      <input type="text" id="expmonth" name="expmonth" placeholder="Month">
+                      <div class="input">
+                        <div>
+                          <label for="expyear">Exp Year</label>
+                          <input type="text" id="expyear" name="expyear" placeholder="Year">
+                        </div>
+                        <div>
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv" placeholder="CVC">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 <input type="submit" value="Continue to checkout" class="btn">
                 </form>
               </div>
             </div>
-          
-            <div class="col-25">
-              <div class="container">
-                <h4>Cart
-                  <span class="price" style="color:black">
-                    <i class="fa fa-shopping-cart"></i>
-                    <b>4</b>
-                  </span>
-                </h4>
-                <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-                <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-                <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-                <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-                <hr>
-                <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+          </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+      <!--Copywrite and social media icons-->
+          <div class="socials a">
+              <a href="https://www.facebook.com/index.php" class="fa fa-facebook"></a><a href="https://twitter.com/" class="fa fa-twitter"></a><a href="https://www.instagram.com/" class="fa fa-instagram"></a><a href="https://www.youtube.com/" class="fa fa-youtube"></a>
               </div>
-            </div>
           </div>
-          <footer><!--copywrite and social media in here-->
-            <div>
-                <a href="https://www.facebook.com/index.php"><img src="images/facebook white.png" class="social-media" alt="Logo Facebook"></a>
-                <a href="https://twitter.com/"><img src="images/twitter white.png" class="social-media" alt="Logo Twitter"></a>
-                <a href="https://www.instagram.com/"><img src="images/Instagram white.png" class="social-media" alt="Logo Instagram"></a><br>
-                <H6>©Sque Eyes 2022  - follow us on social media</H6><p><br></p>     
-            </div>
-        </footer>
-</body>
+          <div class="footer-bottom">
+              <p><h6>©Square Eyes 2023  - follow us on social media</h6></p>
+          </div>
+      </div>
+  </footer>
+  </body>
 </html>
