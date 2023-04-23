@@ -41,3 +41,9 @@ https://www.figma.com/proto/1jqWj66flKVpUFxSROVdZB/square-_eyes-iphone14max-2022
 
 I have been influenced by material from;
 -Tried to learn and make the solution work from material found in https://content.noroff.dev/html-css learning materials.
+
+References:
+https://content.noroff.dev/html-css
+https://www.Youtube.com/
+https://www.W3CSchool.com
+https://developer.mozilla.org/en-US/
