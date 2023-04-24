@@ -18,6 +18,8 @@
   }
 
 body {
+  width: 1000px;
+  align-self: center;
   background-color: var(--primary-bg-color);
   font-family: var(--text-paragraph), Verdana, Geneva, Tahoma, sans-serif;
   min-height: 100vh;
@@ -31,14 +33,7 @@ body {
     background-color: var(--primary-bg-color2);
 }
 
-N h1,
-h2,
-.logo {
-  font-family: var(--text-heading), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-}
-
-N .product-list h2 {
+.product-list h2 {
   font-family: var(--text-paragraph), Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -104,20 +99,34 @@ header a {
 }
   
 .cta,
-.cta-film-info {
-  background-color: green;
+.cta-film-info,
+.cta-buy,
+.cta-info {
   color: #fff;
   font-size: 1em;
   text-transform: uppercase;
   border-radius: 5px;
+  padding: 5px 20px;
   position: relative;
   display: inline-block;
   overflow: hidden;
 }
 
 
-.cta-film-buy{
-    background-color: red;
+.cta,
+.cta-film-info {
+  background-color: green;
+}
+
+.cta-buy{
+  background-color: red;
+  align-items: center;
+  justify-content: center;
+}
+.cta-info{
+  background-color: orange;
+  align-items: center;
+  justify-content: center;
 }
   
 .cta:before {
@@ -231,7 +240,6 @@ footer {
 .page-intro {
   display:flex;
   flex:auto;
-  margin: 50px auto;
 }
 
 .film-content,
@@ -241,12 +249,12 @@ footer {
 }
 
 .page-intro > *,
-.film-content > * {
+.film-group> * {
   flex: 1;
 }
 
 .intro h1,
-.intro h2 {
+.page-intro text {
   text-align: start;
   justify-content: left;
   flex:-1/1;
