@@ -239,7 +239,8 @@ footer {
 
 .page-intro {
   display:flex;
-  flex:auto;
+  flex-direction: row;
+  flex: auto;
 }
 
 .film-content,
@@ -279,7 +280,8 @@ footer {
 
 
 
-.film-group {
+.film-group,
+.page-intro {
   display: grid;
   grid-template-columns: 1fr;
   max-width: 1000px;
@@ -400,6 +402,10 @@ textarea {
   .page-intro {
     display: flex;
     flex-direction: column;
+  }
+
+  .nav {
+    display: none;
   }
 }
 
