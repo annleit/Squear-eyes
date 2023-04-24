@@ -405,9 +405,15 @@ textarea {
   }
 
   .nav {
-    display: none;
+    display: block;
   }
-}
+
+  
+  #check:checked ~ nav{
+    height: 100vh;
+  }
+  }
+
 
 
 @media (min-width: 400px) {
