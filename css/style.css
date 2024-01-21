@@ -150,7 +150,6 @@ body {
   display: grid;
   justify-content: center;
   grid-template-rows: auto 1fr auto;
-  border: 2px solid #de127e;
 }
 
 .main {
@@ -159,7 +158,6 @@ body {
   margin: auto;
   vertical-align: top;
   background-color: var(--primary-bg-color);
-  border: 2px solid #05af1e;
 }
 
 .product-list h2 {
